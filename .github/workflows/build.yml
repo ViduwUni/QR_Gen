@@ -24,7 +24,7 @@ jobs:
       run: pyinstaller --onefile qr_gen.py
 
     - name: Upload Executable
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: qr_gen_exe
         path: dist/qr_gen.exe
